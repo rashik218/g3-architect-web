@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font {
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* dark 02 */
+.text-gray{
+  color: #424242;
+}
+
+/* dark 03 */
+.text-light-gray{
+  color: #727272;
+}
+.bg-light{
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.bg-orange{
+  background-color: #FF900E;
+}
+.text-white{
+  color: #ffffff;
+}
+
+
+/* shared styles */
+.flex{
+  display: flex;
+}
+.justify-center{
+  justify-content: center;
+}
+.align-center{
+  align-items: center;
+}
+
+/* header styles */
+
+
+/* navbar styles */
+
+.navbar{
+  justify-content: space-between;
+}
+.logo{
+  font-weight: 700;
+  font-size: 2.7rem;
+}
+.nav-item{
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-item a{
+  text-decoration: none;
+}
+.navbar, .banner{
+  max-width: 1440px;
+  margin: 0 auto;
+}
