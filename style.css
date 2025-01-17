@@ -54,7 +54,9 @@
   margin-top: 130px;
 }
 /* header styles */
-
+header{
+  background-color: rgba(255, 144, 14, 0.1);
+}
 /* navbar styles */
 
 .navbar {
@@ -91,6 +93,7 @@
 }
 .banner-image {
   width: 100%;
+  margin-bottom: 45px;
 }
 .main {
   margin: 0 auto;
@@ -121,11 +124,84 @@
   color: #ff900e;
 }
 
+/* feature you will enjoy section styles*/
+.features{
+  gap: 145px;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.features .title{
+  border-left: 5px solid #ff900e;
+  padding-left: 21px;
+
+}
+.feature-card{
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+.card-title{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.experience-badge{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+.experience-badge .years{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.feature-architect img{
+  width: 100%;
+}
+/* section some facts stylels */
+.some-facts{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.fact-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 124px;
+}
+.fact-card{
+  border: 1px solid #ff900e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 45px;
+  border-radius: 8px;
+}
+.fact-text{
+  max-width: 540px;
+}
+.fact-text .title{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.fact-card .number{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.fact-card p{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-links,
-  .quick-list {
+  .quick-list,
+  .features {
     flex-direction: column;
   }
   .nav-links{
@@ -137,13 +213,30 @@
   .quick-feature{
     margin: 30px 15px;
   }
+  .experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .fact-container{
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
 }
-
 
 /* mediam size device */
 @media screen and (min-width: 576px) and (max-width: 992px){
-  .quick-list{
+  .quick-list,
+  .features{
     flex-direction: column;
     gap: 50px;
+  }
+  .experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .fact-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 }
