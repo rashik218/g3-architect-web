@@ -50,11 +50,11 @@
 .text-center {
   text-align: center;
 }
-.main > section{
+.main > section {
   margin-top: 130px;
 }
 /* header styles */
-header{
+header {
   background-color: rgba(255, 144, 14, 0.1);
 }
 /* navbar styles */
@@ -125,52 +125,51 @@ header{
 }
 
 /* feature you will enjoy section styles*/
-.features{
+.features {
   gap: 145px;
   margin: 0 auto;
   max-width: 1440px;
 }
-.features .title{
+.features .title {
   border-left: 5px solid #ff900e;
   padding-left: 21px;
-
 }
-.feature-card{
+.feature-card {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
   margin-bottom: 20px;
 }
-.card-title{
+.card-title {
   font-size: 1.25rem;
   font-weight: 600;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.experience-badge{
+.experience-badge {
   padding: 45px 42px;
   font-size: 1.5rem;
   margin-left: -100px;
   margin-top: -100px;
 }
-.experience-badge .years{
+.experience-badge .years {
   font-size: 4rem;
   font-weight: 700;
 }
-.feature-architect img{
+.feature-architect img {
   width: 100%;
 }
 /* section some facts stylels */
-.some-facts{
+.some-facts {
   max-width: 1440px;
   margin: 0 auto;
 }
-.fact-container{
+.fact-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 124px;
 }
-.fact-card{
+.fact-card {
   border: 1px solid #ff900e;
   display: flex;
   flex-direction: column;
@@ -179,23 +178,23 @@ header{
   padding: 35px 45px;
   border-radius: 8px;
 }
-.fact-text{
+.fact-text {
   max-width: 540px;
 }
-.fact-text .title{
+.fact-text .title {
   font-size: 1.8rem;
   font-weight: bold;
 }
-.fact-card .number{
+.fact-card .number {
   font-size: 1.8rem;
   font-weight: 600;
 }
-.fact-card p{
+.fact-card p {
   font-size: 1.25rem;
   font-weight: 600;
 }
 /* sponsors section style  */
-.sponsors{
+.sponsors {
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
@@ -203,26 +202,26 @@ header{
   align-items: center;
   gap: 50px;
 }
-.sponsors-info{
+.sponsors-info {
   max-width: 542px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.sponsors-info .title{
+.sponsors-info .title {
   font-size: 1.8rem;
   font-weight: bold;
 }
-.sponsors-info p{
+.sponsors-info p {
   text-align: center;
 }
-.sponsor-img{
+.sponsor-img {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
   gap: 155px;
 }
-.sponsor-img img{
+.sponsor-img img {
   filter: grayscale(100%);
 }
 /* responsive media query */
@@ -234,45 +233,58 @@ header{
   .sponsors {
     flex-direction: column;
   }
-  .nav-links{
+  .nav-links {
     gap: 10px;
   }
-  .architect-images{
+  .architect-images {
     grid-template-columns: 1fr;
   }
-  .quick-feature{
+  .quick-feature {
     margin: 30px 15px;
   }
-  .experience-badge{
+  .experience-badge {
     margin-top: 20px;
     margin-left: 20px;
   }
-  .fact-container{
+  .fact-container {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  .sponsor-img{
+  .sponsor-img {
     grid-template-columns: 1fr;
     gap: 30px;
   }
 }
+/* footer styles  */
 
+.rights {
+  max-width: 1440px;
+  height: 100px;
+  background-color: rgba(255, 244, 231, 1);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 130px;
+  border-radius: 8px;
+}
 /* mediam size device */
-@media screen and (min-width: 576px) and (max-width: 992px){
+@media screen and (min-width: 576px) and (max-width: 992px) {
   .quick-list,
-  .features{
+  .features {
     flex-direction: column;
     gap: 50px;
   }
-  .experience-badge{
+  .experience-badge {
     margin-top: 20px;
     margin-left: 20px;
   }
-  .fact-container{
+  .fact-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
-  .sponsor-img{
+  .sponsor-img {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
